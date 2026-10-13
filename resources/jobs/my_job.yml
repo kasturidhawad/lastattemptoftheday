@@ -1,0 +1,10 @@
+
+resources:
+  jobs:
+    my_notebook_job:
+      name: my_notebook_job
+
+      tasks:
+        - task_key: run_notebook
+          notebook_task:
+            notebook_path: ../../hello_git_job.ipynb

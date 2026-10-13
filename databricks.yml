@@ -1,0 +1,22 @@
+
+bundle:
+  name: job_migration_demo
+
+include:
+  - resources/jobs/*.yml
+
+targets:
+  source:
+    default: true
+    mode: development
+    workspace:
+      host: https://dbc-678a54c7-0739.cloud.databricks.com
+    presets:
+      source_linked_deployment: false
+
+  target:
+    mode: development
+    workspace:
+      host: https://dbc-bacc8f69-c21d.cloud.databricks.com
+    presets:
+      source_linked_deployment: false
